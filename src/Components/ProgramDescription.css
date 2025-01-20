@@ -1,0 +1,12 @@
+.start-page-btn.progam-description{
+    font-size: 12px;
+    height: auto;
+    padding: 1rem;
+    position: fixed;
+      bottom: 0;
+      width:100vw;
+  }
+  
+  .start-page-btn.progam-description a{
+    color:antiquewhite;
+  }
