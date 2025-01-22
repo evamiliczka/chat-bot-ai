@@ -241,6 +241,7 @@ messages, setMessages }) => {
             onFocus ={() => setShowEmojiPicker(false)}
           />
           <span onClick={sendMessage}>
+           <i className='fa-solid fa-paper-plane' ></i>
            <FontAwesomeIcon icon="fa-solid fa-paper-plane" />
           </span>
         </form>
