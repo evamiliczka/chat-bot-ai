@@ -361,6 +361,13 @@
   opacity: 0;
 }
 
+@media screen and (min-width: 901px){
+  i.close-list{
+    display: none;
+  }
+}
+
+
 @media (max-width: 900px) {
   .chat-app {
     flex-direction: column;
