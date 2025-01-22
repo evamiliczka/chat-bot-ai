@@ -2,6 +2,7 @@ import React, { useEffect,  useRef,  useState } from 'react';
 import './ChatBotApp.css';
 import Picker from '@emoji-mart/react'
 import data from '@emoji-mart/data'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // const dotenv = require('dotenv').config();
 
 
@@ -219,8 +220,8 @@ messages, setMessages }) => {
 
           <span onClick={() => setShowEmojiPicker((prevValue) => !prevValue)           
             }>
-            <i className='fa-solid fa-face-smile emoji'
-            ></i>
+            
+            <FontAwesomeIcon icon="fa-solid fa-face-smile" className='emoji'/>
           </span>
           {showEmojiPicker && (
             <div className='picker'>
@@ -240,7 +241,7 @@ messages, setMessages }) => {
             onFocus ={() => setShowEmojiPicker(false)}
           />
           <span onClick={sendMessage}>
-           <i className='fa-solid fa-paper-plane' ></i>
+           <FontAwesomeIcon icon="fa-solid fa-paper-plane" />
           </span>
         </form>
       </div>
