@@ -84,6 +84,8 @@ messages, setMessages }) => {
     
       setIsTyping(true);
       /* response */
+      console.log('Hi');
+      console.log( `bearer ${import.meta.env.VITE_API_KEY}`);
       const response = await fetch("https://api.openai.com/v1/chat/completions",
         //options object
         {
@@ -104,6 +106,7 @@ messages, setMessages }) => {
       ); //await fetch(...)
 
       const data = await response.json();
+      console.log('response is', data);
       const chatResponse = data.choices[0].message.content.trim();
 
       const newResponse = {
