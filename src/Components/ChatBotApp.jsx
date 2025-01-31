@@ -84,8 +84,7 @@ messages, setMessages }) => {
     
       setIsTyping(true);
       /* response */
-      console.log('Hi');
-      console.log( `bearer ${import.meta.env.VITE_API_KEY}`);
+    
       const response = await fetch("https://api.openai.com/v1/chat/completions",
         //options object
         {
